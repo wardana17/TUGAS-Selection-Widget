@@ -1,0 +1,145 @@
+# TUGAS-Selection-Widget
+Biodata dengan Auto Complete text
+activity_main3.
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".MainActivity3">
+
+    <TextView
+        android:id="@+id/Name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Your Name" />
+
+    <EditText
+        android:id="@+id/nName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Input Your Name" />
+
+    <TextView
+        android:id="@+id/textgender"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Gender" />
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/radioButton3"
+            android:layout_width="188dp"
+            android:layout_height="wrap_content"
+            android:text="Man" />
+
+        <RadioButton
+            android:id="@+id/radioButton4"
+            android:layout_width="186dp"
+            android:layout_height="wrap_content"
+            android:text="Woman" />
+
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/textcountry"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Cities" />
+
+    <AutoCompleteTextView
+        android:id="@+id/actv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:completionHint="Select a country"
+        android:completionThreshold="1"
+        android:hint="Select a Cities" />
+
+    <TextView
+        android:id="@+id/textlanguange"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Language" />
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="167dp">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <CheckBox
+                android:id="@+id/K1L"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="@string/Indonesia" />
+
+            <CheckBox
+                android:id="@+id/K1R"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="@string/English" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <CheckBox
+                android:id="@+id/K2L"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="@string/Japanese" />
+
+            <CheckBox
+                android:id="@+id/K2R"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="@string/France" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <CheckBox
+                android:id="@+id/K3L"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="@string/Java" />
+
+            <CheckBox
+                android:id="@+id/K3R"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="@string/Spain" />
+
+        </TableRow>
+    </TableLayout>
+    <Button
+    android:id="@+id/buttonshow"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="SHOW" />
+
+
+</LinearLayout>
